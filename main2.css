@@ -1,3 +1,25 @@
+html {
+  position: relative;
+  min-height: 100%;
+} /* Position relative and min-height required for sticky footer; */
+
+body { 
+  padding-bottom: 70px; 
+  background-color: #EBEFFA;
+  margin-bottom: 60px;  /* Margin bottom by footer height */
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin-top: -1px;
+}
+
+.jumbotron {
+  padding-bottom: 120px;
+  /*background: rgba(39,62,84,0.82);*/
+}
+
 .page-image {
   background: url("images/glacier.png");
   background-size: 100%;
@@ -7,23 +29,38 @@
   background-color: transparent;
 }
 
-.header li a {
-  border: 2px;
-
+.header li {
+  text-align: center;
 }
 
-body { padding-bottom: 70px; }
+.header h3 {
+  text-align: center;
+  margin-top: -1px;
+}
+
+.nav.navbar-nav.navbar-right.collapse.navbar-collapse {
+  color: black;
+}
+
+.nav li {
+  color: black;
+}
+
+.center-block button {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+
+
+/* Also see above in body: margin-bottom 60px required for sticky footer; */
+/* Also see above in html: position relative and min-height required for sticky footer; */
 .footer {
   position: absolute;
   bottom: 0;
